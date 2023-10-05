@@ -1,22 +1,19 @@
-  .container-fluid,
-  .navbar-brand,
-  .navbar{
-    background-color: #1f1f24;
-    color: #fdfcfe;
-    font-family:  "Product Sans", sans-serif;
-    height: 100vh;
-  }
-  #code-button {
-    font-size: 14px;
-  }
-  .projects-text {
-    color: #fdfcfe5d;
-    font-size: 100px;
-    line-height: 170px;
-      font-weight: 700;
-      letter-spacing: 2px;
-  }
-  #dropdown-icon{
-    color: #fdfcfe;
-  }
-
+body {
+  background-color: #1f1f24;
+  color: #fdfcfe;
+  font-family: "Product Sans", sans-serif;
+  height: 100vh;
+}
+.btn-green{
+  background-color: #54E6A5;
+  color: #1f1f24;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px 20px 15px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn-green:hover{
+  background-color: #141c27;
+  color: #fdfcfe;
+}

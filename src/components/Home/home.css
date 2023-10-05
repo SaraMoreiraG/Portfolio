@@ -1,7 +1,5 @@
 #home {
 	background-color: #1f1f24;
-	color: #fdfcfe;
-	font-family: "Product Sans", sans-serif;
 	height: 100vh;
 }
 
@@ -23,6 +21,19 @@ small {
 	font-size: 0.8em;
 }
 
+.right {
+	display: flex;
+	align-items: center;
+	padding-right: 5em;
+}
+
+.languajes {
+	height: 400px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/******** Effects *********/
 .title-transition {
 	color: #54E6A5;
 	font-size: 4em;
@@ -38,45 +49,27 @@ small {
 	opacity: 0;
 	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
+
 .fade-out {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
-  }
-  .fade-in {
+}
+
+.fade-in {
 	opacity: 1;
 	transition: opacity 0.5s ease-in-out;
-  }
-  @keyframes cursorBlink {
-	0%, 100% {
-	  opacity: 1;
-	}
-	50% {
-	  opacity: 0;
-	}
-  }
-
-  .cursor-blink {
-	animation: cursorBlink 1s infinite;
-  }
-
-.right {
-	display: flex;
-	align-items: center;
-	padding-right: 5em;
 }
-.languajes{
-	height: 400px;
-	align-items: center;
-	justify-content: space-around;
-}
+
+/******** Icons *********/
 .fa-code {
 	font-size: 4em;
 }
 
 .fa-brands,
-.fa-database{
+.fa-database {
 	font-size: 7em;
 }
+
 .fa-html5 {
 	color: #f36518;
 }
@@ -96,15 +89,92 @@ small {
 .fa-react {
 	color: #5adafd;
 }
-.fa-angular{
+
+.fa-angular {
 	color: #d60030;
 }
-.fa-python{
-color: #3c77a8;
+
+.fa-python {
+	color: #3c77a8;
 }
-.fa-node{
+
+.fa-node {
 	color: #76ad68;
 }
-.fa-database{
+
+.fa-database {
 	color: #f89b26;
+}
+
+/******** Media *********/
+@media (max-width: 1425px) {
+	.title-transition {
+		font-size: 3em;
+	}
+}
+
+@media (max-width: 1102px) {
+	.header-text h1 {
+		font-size: 6em;
+	}
+
+	.title-transition {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 973px) {
+	.header-text h1 {
+		font-size: 5em;
+		line-height: 120px;
+	}
+
+	.fa-code {
+		font-size: 3em;
+	}
+
+	.fa-brands,
+	.fa-database {
+		font-size: 6em;
+	}
+}
+
+@media (max-width: 843px) {
+	.header-text h1 {
+		font-size: 4em;
+		line-height: 100px;
+	}
+
+	.fa-brands,
+	.fa-database {
+		font-size: 5em;
+	}
+
+	.fa-code {
+		font-size: 2.5em;
+	}
+
+	.title-transition {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 767px) {
+	.header-text h1 {
+		font-size: 4em;
+		line-height: 100px;
+	}
+
+	.fa-brands,
+	.fa-database {
+		font-size: 5em;
+	}
+
+	.fa-code {
+		font-size: 2.5em;
+	}
+
+	.title-transition {
+		font-size: 1.5em;
+	}
 }

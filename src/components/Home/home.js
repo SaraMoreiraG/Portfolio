@@ -57,7 +57,7 @@ function Home() {
 
   return (
     <div className="row" id="home">
-      <div className="left col-6">
+      <div className="left col-md-6 col-sm-12">
         <div className="header-text">
           <h1>Hello!</h1>
           <h1>
@@ -68,24 +68,29 @@ function Home() {
           </h2>
         </div>
       </div>
-      <div class="right col-6">
-        <div class="icons col-12">
-          <div class="row mb-5 pb-5">
-            <i class="fa-solid fa-code"></i>
+      <div className="right col-md-6 col-sm-12">
+        <div className="icons col-12">
+          <div className="row mb-5 pb-5">
+            <i className="fa-solid fa-code"></i>
           </div>
           {/* Render the icons based on currentTitleIndex */}
-          <div class="row languajes">
-          {iconClassMapping
-    .find((mapping) => mapping.index === currentTitleIndex)
-    .classes.map((iconClass, index) => (
-      <div className={`col-4 text-center ${flip ? 'fade-out' : 'fade-in'}`} key={index}>
-        <i className={iconClass} />
-      </div>
-    ))}
+          <div className="row languajes">
+            {iconClassMapping
+              .find((mapping) => mapping.index === currentTitleIndex)
+              .classes.map((iconClass, index) => (
+                <div
+                  className={`col-4 text-center ${
+                    flip ? "fade-out" : "fade-in"
+                  }`}
+                  key={index}
+                >
+                  <i className={iconClass} />
+                </div>
+              ))}
           </div>
-          <div class="row d-flex justify-content-center mt-5 pt-5">
+          <div className="row d-flex justify-content-center mt-5 pt-5">
             <div className="d-flex justify-content-end">
-              <i class="fa-solid fa-code"></i>
+              <i className="fa-solid fa-code"></i>
             </div>
           </div>
         </div>
