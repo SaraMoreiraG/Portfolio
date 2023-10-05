@@ -38,19 +38,44 @@ small {
 	opacity: 0;
 	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
+.fade-out {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+  }
+  .fade-in {
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+  }
+  @keyframes cursorBlink {
+	0%, 100% {
+	  opacity: 1;
+	}
+	50% {
+	  opacity: 0;
+	}
+  }
+
+  .cursor-blink {
+	animation: cursorBlink 1s infinite;
+  }
 
 .right {
 	display: flex;
 	align-items: center;
 	padding-right: 5em;
 }
-
+.languajes{
+	height: 400px;
+	align-items: center;
+	justify-content: space-around;
+}
 .fa-code {
 	font-size: 4em;
 }
 
-.fa-brands{
-	font-size: 9em;
+.fa-brands,
+.fa-database{
+	font-size: 7em;
 }
 .fa-html5 {
 	color: #f36518;
@@ -70,4 +95,16 @@ small {
 
 .fa-react {
 	color: #5adafd;
+}
+.fa-angular{
+	color: #d60030;
+}
+.fa-python{
+color: #3c77a8;
+}
+.fa-node{
+	color: #76ad68;
+}
+.fa-database{
+	color: #f89b26;
 }
