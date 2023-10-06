@@ -1,5 +1,6 @@
 #skills{
-	margin-left: 5em;
+	padding-left: 5em;
+	background-color: #09101a;
 }
 .center-title{
 	display: flex;
