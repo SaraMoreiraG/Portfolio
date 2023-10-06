@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./about.css";
 import profileImg from "../../assets/images/profilepic.jpg";
 import Cv from "../../assets/docs/SaraMoreiraCV.pdf"
@@ -20,7 +20,7 @@ function About() {
                 aut odit auting fugit sed thisnquia consequuntur magni dolores
                 eos designer heresm qui ratione
               </p>
-              <a href={Cv} download={Cv} className="btn-green">
+              <a href={Cv} download="Cv Sara Moreira" className="btn-green">
                 Download CV <i className="fa-solid fa-download ms-2"></i>
               </a>
             </div>
@@ -32,7 +32,7 @@ function About() {
           <div className="col-8">
             <img src={profileImg} alt="Sara Moreira Img" />
           </div>
-          <div className="github">
+          <div className="github" onClick={()=> window.open("https://github.com/SaraMoreiraG", "_blank")}>
             <i class="fa-brands fa-github"></i>
             <div>
               <p className="title">GitHub</p>

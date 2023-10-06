@@ -1,17 +1,9 @@
 #about{
 	padding: 5em;
 	height: 100vh;
+	background-color: #02050a;
 }
-#about h1{
-	color: #54E6A5;
-	font-size: 1.5em;
-	letter-spacing: 2px;
-}
-#about h2{
-	font-size: 3em;
-	font-weight: 700;
-	margin-top: 0.8em;
-}
+
 #about p{
 	font-size: 1.3em;
 }

@@ -1,10 +1,23 @@
 body {
-  background-color: #1f1f24;
+  background-color: #09101a;
   color: #fdfcfe;
   font-family: "Product Sans", sans-serif;
   height: 100vh;
 }
-.btn-green{
+
+h1 {
+  color: #54E6A5;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 3em;
+  font-weight: 700;
+  margin-top: 0.8em;
+}
+
+.btn-green {
   background-color: #54E6A5;
   color: #1f1f24;
   text-decoration: none;
@@ -13,7 +26,8 @@ body {
   font-weight: 600;
   transition: background-color 0.3s ease-in-out;
 }
-.btn-green:hover{
+
+.btn-green:hover {
   background-color: #141c27;
   color: #fdfcfe;
 }

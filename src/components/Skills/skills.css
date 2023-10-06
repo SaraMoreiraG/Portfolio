@@ -1,0 +1,39 @@
+#skills{
+	margin-left: 5em;
+}
+.center-title{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 7em;
+}
+.education p,
+.experience p{
+	color: #a2a2a2;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.education h3,
+.experience h3{
+	font-weight: bold;
+}
+.date{
+	color: #54E6A5;
+	border: 2px solid #54E6A5;
+	padding: 10px 15px 10px 15px;
+	text-align: center;
+	font-size: 1.2em;
+}
+.techs{
+	background-color: #151c25;
+}
+.tech-text{
+	font-weight: 700;
+}
+.tech-line{
+	border-color: #54E6A5;
+	border-width: 5px;
+	opacity:1;
+}
