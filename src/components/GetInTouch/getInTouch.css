@@ -1,18 +1,27 @@
-#getInTouch{
+#getInTouch {
 	padding-left: 5em;
+	padding-right: 4em;
+	padding-top: 65px;
 }
-#getInTouch h2{
+
+#getInTouch h2 {
 	font-size: 8.4em;
-	line-height: 0.4em;
+	line-height: 0.6em;
+	margin-top: 10px;
 	margin-bottom: 45px;
 }
-#getInTouch span{
+
+#getInTouch h1 {
+	color: #fdfcfe;
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+#getInTouch span {
 	font-size: 0.5em;
 }
-#getInTouch p{
-	color: #a2a2a2;
-}
-.block{
+
+.block {
 	background-color: #09101a;
 	height: 270px;
 	width: 310px;
@@ -21,16 +30,44 @@
 	justify-content: center;
 	align-items: center;
 }
-.block i{
+
+.block i {
 	color: #54E6A5;
 	font-size: 5em;
 }
-.quantity{
+
+.quantity {
 	font-size: 2.7em;
+	color: #fdfcfe;
 	font-weight: 700;
 	margin-top: 6px;
 	margin-bottom: 4px;
 }
-.block-text{
+
+.block-text {
 	font-size: 1.2em;
+	color: #fdfcfe;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+}
+
+.form input,
+.form textarea{
+	border: 2px solid #54E6A5;
+	color: #fdfcfe;
+	background-color: #09101a;
+	outline: none;
+	margin-bottom: 30px;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 17px;
+}
+.form input {
+	height: 70px;
+}
+.form textarea{
+	padding-top: 10px;
 }

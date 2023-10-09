@@ -1,0 +1,108 @@
+.box {
+	overflow: hidden;
+	box-shadow: 0 0 8px #0dab76;
+	text-align: center;
+	position: relative
+}
+
+.box:after,
+.box:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(10, 16, 25, .9);
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all .5s ease 0s
+}
+
+.box:after {
+	background: rgba(255, 255, 255, .3);
+	border: 2px solid #0dab76;
+	top: 0;
+	left: 170%;
+	opacity: 1;
+	z-index: 1;
+	transform: skewX(45deg);
+	transition: all 1s ease 0s
+}
+
+.box:hover:before {
+	opacity: 1
+}
+
+.box:hover:after {
+	left: -170%
+}
+
+.box .title {
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: block;
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+	margin: 0 0 10px
+}
+
+.box .post {
+	font-style: italic;
+	display: block;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 10px
+}
+
+.box .icon {
+	padding: 0;
+	list-style: none;
+	margin: 0
+}
+
+.box .icon li {
+	display: inline-block
+}
+
+.box .icon li a {
+	display: block;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 50%;
+	background: #0dab76;
+	font-size: 18px;
+	color: #fff;
+	margin-right: 10px;
+	transition: all .5s ease 0s;
+	text-decoration: none;
+}
+
+.box .icon li a:hover {
+	transform: rotate(360deg)
+}
+
+.box img {
+	width: 100%;
+	height: auto
+}
+
+.box .box-content {
+	width: 100%;
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	transition: all .5s ease 0s
+}
+
+.box:hover .box-content {
+	bottom: 30%
+}
+
+@media only screen and (max-width:990px) {
+	.box {
+		margin-bottom: 30px
+	}
+}

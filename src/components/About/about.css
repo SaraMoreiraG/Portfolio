@@ -1,28 +1,28 @@
-#about{
+#about {
 	padding: 10em 5em 8em 5em;
 	background-color: #02050a;
 }
 
-#about p{
-	font-size: 1.3em;
-}
-.img-button{
+.img-button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.elem-container{
+
+.elem-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 15px;
 }
-img {
+
+#about img {
 	height: auto;
 	max-width: 100%;
 	box-shadow: 25px -25px #54E6A5;
-   }
-.github{
+}
+
+.github {
 	background-color: #232323;
 	display: flex;
 	justify-content: center;
@@ -34,21 +34,25 @@ img {
 	cursor: pointer;
 	transition: background-color 0.3s ease-in-out;
 }
-.github:hover{
+
+.github:hover {
 	color: #232323;
 	background-color: #fdfcfe;
 }
-.fa-github{
+
+.fa-github {
 	font-size: 3em;
 	border-radius: 50%;
 	margin-right: 10px;
 }
-.title{
+
+.title {
 	font-size: 1.1em !important;
 	font-weight: 700;
 	margin: 0;
 }
-.text{
+
+.text {
 	color: #a2a2a2;
 	font-size: 1em !important;
 	font-weight: 700;
