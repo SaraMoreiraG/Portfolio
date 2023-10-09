@@ -1,0 +1,33 @@
+#contact{
+	padding: 5em;
+}
+#contact .fa-solid{
+	font-size: 60px;
+	color: #02050a;
+}
+#contact .fa-brands{
+	font-size: 18px;
+	color: #a2a2a2;
+	margin-right: 10px;
+}
+.green-circle{
+	background-color: #54E6A5;
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 30px;
+}
+#contact h3{
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#contact p{
+	margin-bottom: 0;
+}
+.social-media{
+	display: block;
+}

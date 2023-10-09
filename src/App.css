@@ -17,9 +17,10 @@ h2{
   margin-top: 0.8em;
 }
 
-p{
+p, a{
   font-size: 18px;
   color: #a2a2a2;
+  text-decoration: none;
 }
 
 .btn-green,

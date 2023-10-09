@@ -70,11 +70,11 @@ function Home() {
       </div>
       <div className="right col-md-6 col-sm-12">
         <div className="icons col-12">
-          <div className="row mb-5 pb-5">
+          <div className="row mb-4">
             <i className="fa-solid fa-code"></i>
           </div>
           {/* Render the icons based on currentTitleIndex */}
-          <div className="row languajes">
+          <div className="row languajes mx-5">
             {iconClassMapping
               .find((mapping) => mapping.index === currentTitleIndex)
               .classes.map((iconClass, index) => (
@@ -88,7 +88,7 @@ function Home() {
                 </div>
               ))}
           </div>
-          <div className="row d-flex justify-content-center mt-5 pt-5">
+          <div className="row d-flex justify-content-center mt-4">
             <div className="d-flex justify-content-end">
               <i className="fa-solid fa-code"></i>
             </div>
