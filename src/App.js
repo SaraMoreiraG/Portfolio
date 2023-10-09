@@ -5,6 +5,7 @@ import About from "./components/About/about";
 import GetInTouch from "./components/GetInTouch/getInTouch";
 import Skills from "./components/Skills/skills";
 import Projects from "./components/Projects/projects";
+import Banner from "./components/Banner/banner";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <GetInTouch />
       <Skills />
       <Projects />
+      <Banner />
     </div>
   );
 }
