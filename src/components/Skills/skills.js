@@ -3,7 +3,7 @@ import "./skills.css";
 
 function Skills() {
   return (
-    <div className="row" id="skills">
+    <section className="row" id="skills">
       <div className="center-title mb-4">
         <h1 className="col-12">Education & Skills</h1>
         <h2 className="col-6 mt-1">
@@ -94,7 +94,7 @@ function Skills() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

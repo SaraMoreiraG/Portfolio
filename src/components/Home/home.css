@@ -1,6 +1,6 @@
 #home {
 	height: 100vh;
-	background-image: linear-gradient(to bottom right, #09101a, #54E6A5);
+	background-image: linear-gradient(to bottom right, #02050a, #09101a);
 }
 
 .left {
@@ -37,11 +37,14 @@ small {
 	align-items: center;
 	justify-content: space-around;
 	padding: 20px 0 20px 0;
+	/* background-image: linear-gradient(to bottom right, #09101a, #1f1f24); */
 }
 
 /******** Effects *********/
 .title-transition {
 	color: #54E6A5;
+	/* background-image: linear-gradient(to bottom right, #09101a, #1f1f24); */
+
 	font-size: 4em;
 	margin: 10px 0 0 0;
 	font-weight: 700;

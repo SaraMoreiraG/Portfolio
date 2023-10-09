@@ -7,7 +7,7 @@
 #getInTouch h2 {
 	font-size: 8.4em;
 	line-height: 0.6em;
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-bottom: 45px;
 }
 
@@ -24,7 +24,7 @@
 .block {
 	background-color: #09101a;
 	height: 270px;
-	width: 310px;
+	width: 295px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -47,6 +47,12 @@
 .block-text {
 	font-size: 1.2em;
 	color: #fdfcfe;
+}
+
+.right-form{
+	background-color: #09101a;
+	padding: 30px 40px 0 40px;
+	margin-bottom: 120px;
 }
 
 .form{

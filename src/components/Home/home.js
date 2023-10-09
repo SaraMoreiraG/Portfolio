@@ -56,7 +56,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="row" id="home">
+    <section className="row" id="home">
       <div className="left col-md-6 col-sm-12">
         <div className="header-text">
           <h1>Hello!</h1>
@@ -95,7 +95,7 @@ function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

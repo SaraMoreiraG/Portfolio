@@ -70,7 +70,7 @@ function Projects() {
 		: projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="row" id="projects">
+    <section className="row" id="projects">
       <h1>Projects</h1>
       <h2 className="col-8 mt-3 mb-5">
         Elevate your brand to new heights with our portfolio expertise
@@ -122,7 +122,7 @@ function Projects() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

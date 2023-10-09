@@ -5,14 +5,14 @@ import Cv from "../../assets/docs/SaraMoreiraCV.pdf"
 
 function About() {
   return (
-    <div className="row" id="about">
+    <section className="row" id="about">
       <div className="d-flex align-items-center col-6">
         <div>
           <h1>ABOUT ME</h1>
           <h2>Transforming visions into exceptional portfolios</h2>
           <div className="d-flex mt-5">
             <div className="col-2 me-4">
-              <hr></hr>
+              <hr className="about-line"></hr>
             </div>
             <div className="col-10">
               <p className="mb-5">
@@ -41,7 +41,7 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
