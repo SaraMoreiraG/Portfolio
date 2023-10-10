@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import spanishFlag from "../../assets/images/spanish-flag.png";
 import englishFlag from "../../assets/images/english-flag.png";
 
@@ -45,7 +45,7 @@ function Navbar() {
           setActiveSection(sectionId);
         }
       });
-    }
+    };
 
     window.addEventListener("scroll", handleScroll);
 
@@ -62,50 +62,61 @@ function Navbar() {
   };
 
   return (
-    <div className={`nav ${activeSection === "" || !isScrolling ? "" : "nav-visible"}`}>
+    <div
+      className={`nav ${
+        activeSection === "" || !isScrolling ? "" : "nav-visible"
+      }`}
+    >
       <input type="checkbox" id="nav-check" />
       <a href="#home" className="nav-header">
-  <div className="nav-img"></div>
-  <div className="nav-title">SARA</div>
-</a>
+        <div className="nav-img"></div>
+        <div className="nav-title">SARA</div>
+      </a>
+
       <div className="nav-btn">
         <label htmlFor="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
+          <i class="fa-solid fa-bars"></i>
         </label>
       </div>
 
       <div className="nav-links">
-        <a
-          href="#about"
-          className={activeSection === "about" ? "active" : ""}
-        >
-          {t('nav.about')}
+        <a href="#about" className={activeSection === "about" ? "active" : ""}>
+          {t("nav.about")}
         </a>
         <a
           href="#skills"
           className={activeSection === "skills" ? "active" : ""}
         >
-          {t('nav.skills')}
+          {t("nav.skills")}
         </a>
         <a
           href="#projects"
           className={activeSection === "projects" ? "active" : ""}
         >
-          {t('nav.projects')}
+          {t("nav.projects")}
         </a>
         <a
           href="#contact"
           className={activeSection === "contact" ? "active" : ""}
         >
-          {t('nav.contact')}
+          {t("nav.contact")}
         </a>
       </div>
+
       <div className="languaje-buttons">
-      <button onClick={() => changeLanguage('es')} className="btn-languaje"><img className={`languaje ${currentLanguaje === "es" ? "selected" : ""}`} src={spanishFlag} /></button>
-      <button onClick={() => changeLanguage('en')} className="btn-languaje"><img className={`languaje ${currentLanguaje === "en" ? "selected" : ""}`} src={englishFlag} /></button>
-    </div>
+        <button onClick={() => changeLanguage("es")} className="btn-languaje">
+          <img
+            className={`languaje ${currentLanguaje === "es" ? "selected" : ""}`}
+            src={spanishFlag}
+          />
+        </button>
+        <button onClick={() => changeLanguage("en")} className="btn-languaje">
+          <img
+            className={`languaje ${currentLanguaje === "en" ? "selected" : ""}`}
+            src={englishFlag}
+          />
+        </button>
+      </div>
     </div>
   );
 }
