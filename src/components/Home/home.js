@@ -5,7 +5,7 @@ import "./home.css";
 function Home() {
   const { t } = useTranslation();
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
-  const titles = ["Full Stack Developer", "Front End Techs", "Back End Techs"];
+  const titles = [t('home.fullstack'), t('home.front'), t('home.back')];
   const [flip, setFlip] = useState(false);
   const iconClassMapping = [
     {

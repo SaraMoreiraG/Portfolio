@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
+
 import Card from "./Card/card";
 import bar89 from "../../assets/images/bar89.png";
 import casaRural from "../../assets/images/casarural.png";
@@ -10,6 +12,7 @@ import spotify from "../../assets/images/spotify.png";
 import "./projects.css";
 
 function Projects() {
+	const { t } = useTranslation();
 	const [selectedCategory, setSelectedCategory] = useState("All");
 
 	// Projects data
@@ -17,7 +20,7 @@ function Projects() {
 	  {
 		imageSrc: bar89,
 		name: "Restaurante el 89",
-		post: "Web Developer",
+		post: t('projects.bar89'),
 		link: "#",
 		github: "https://github.com/SaraMoreiraG/restaurante-el89",
 		category: "Angular",
@@ -25,7 +28,7 @@ function Projects() {
 	  {
 		imageSrc: casaRural,
 		name: "Casa de Armas",
-		post: "Web Developer",
+		post: t('projects.casaRural'),
 		link: "#",
 		github: "https://github.com/SaraMoreiraG/CasaRural",
 		category: "Angular",
@@ -33,7 +36,7 @@ function Projects() {
 	  {
 		imageSrc: eCommerce,
 		name: "E-commerce",
-		post: "E-commerce",
+		post: t('projects.ecommerce'),
 		link: "#",
 		github: "https://github.com/SaraMoreiraG/e-commerce",
 		category: "React",
@@ -41,14 +44,14 @@ function Projects() {
 	  {
 		imageSrc: bestPhoto,
 		name: "Best Photo Places",
-		post: "E-commerce",
+		post: t('projects.photoblog'),
 		link: "https://bestphotoplaces.wordpress.com/",
 		category: "WordPress",
 	  },
 	  {
 		imageSrc: spotify,
 		name: "Spotify Api",
-		post: "E-commerce",
+		post: t('projects.spotify'),
 		link: "#",
 		github: "https://github.com/SaraMoreiraG/SpotifyCountdown",
 		category: "React",
@@ -56,7 +59,7 @@ function Projects() {
 	  {
 		imageSrc: socialApp,
 		name: "Travel Tales",
-		post: "E-commerce",
+		post: t('projects.travel'),
 		link: "#",
 		github: "https://github.com/SaraMoreiraG/Travel-Tales-React-Flask-Api",
 		category: "React",
@@ -71,10 +74,8 @@ function Projects() {
 
   return (
     <section className="row" id="projects">
-      <h1>Projects</h1>
-      <h2 className="col-8 mt-3 mb-5">
-        Elevate your brand to new heights with our portfolio expertise
-      </h2>
+      <h1>{t('projects.title')}</h1>
+      <h2 className="col-8 mt-3 mb-5">{t('projects.description')}</h2>
       <div className="row justify-content-center mb-5">
         <button
           className={`btn-green2 me-2 ${

@@ -7,7 +7,8 @@ import "./navbar.css";
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("");
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLanguaje = i18n.language;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,30 +63,30 @@ function Navbar() {
           href="#about"
           className={activeSection === "about" ? "active" : ""}
         >
-          About
+          {t('nav.about')}
         </a>
         <a
           href="#skills"
           className={activeSection === "skills" ? "active" : ""}
         >
-          Skills
+          {t('nav.skills')}
         </a>
         <a
           href="#projects"
           className={activeSection === "projects" ? "active" : ""}
         >
-          Projects
+          {t('nav.projects')}
         </a>
         <a
           href="#contact"
           className={activeSection === "contact" ? "active" : ""}
         >
-          Contact
+          {t('nav.contact')}
         </a>
       </div>
-      <div>
-      <button onClick={() => changeLanguage('es')}><img src={spanishFlag} /></button>
-      <button onClick={() => changeLanguage('en')}><img src={englishFlag} /></button>
+      <div className="languaje-buttons">
+      <button onClick={() => changeLanguage('es')} className="btn-languaje"><img className={`languaje ${currentLanguaje === "es" ? "selected" : ""}`} src={spanishFlag} /></button>
+      <button onClick={() => changeLanguage('en')} className="btn-languaje"><img className={`languaje ${currentLanguaje === "en" ? "selected" : ""}`} src={englishFlag} /></button>
     </div>
     </div>
   );

@@ -68,7 +68,7 @@
   	color: #54E6A5;
 	text-decoration: underline;
 	text-underline-offset: 19px;
-text-decoration-thickness: 3px;
+	text-decoration-thickness: 3px;
   }
 
   a:not(.active)::before {
@@ -93,6 +93,24 @@ text-decoration-thickness: 3px;
 
   .nav>#nav-check {
   	display: none;
+  }
+  .languaje-buttons{
+	box-shadow: 0 0 12px #0dab76;
+	display: flex;
+  }
+  .btn-languaje{
+	background-color: transparent;
+	border: none;
+  }
+  .languaje{
+	height: 30px;
+	transition: all 0.3s ease-in-out;
+  }
+  .languaje:hover{
+	height: 40px;
+  }
+  .selected{
+	height: 40px;
   }
 
   @media (max-width:600px) {

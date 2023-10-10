@@ -1,27 +1,28 @@
 import React from "react";
-import "./about.css";
+import { useTranslation } from 'react-i18next';
+
 import profileImg from "../../assets/images/profilepic.jpg";
 import Cv from "../../assets/docs/SaraMoreiraCV.pdf"
 
+import "./about.css";
+
 function About() {
+  const { t } = useTranslation();
+
   return (
     <section className="row" id="about">
       <div className="d-flex align-items-center col-6">
         <div>
-          <h1>ABOUT ME</h1>
-          <h2>Transforming visions into exceptional portfolios</h2>
+          <h1>{t('about.title')}</h1>
+          <h2>{t('about.title2')}</h2>
           <div className="d-flex mt-5">
             <div className="col-2 me-4">
               <hr className="about-line"></hr>
             </div>
             <div className="col-10">
-              <p className="mb-5">
-                Nemo design enim ipsam voluptatem quim voluptas sit aspernatur
-                aut odit auting fugit sed thisnquia consequuntur magni dolores
-                eos designer heresm qui ratione
-              </p>
+              <p className="mb-5">{t('about.p')}</p>
               <a href={Cv} download="Cv Sara Moreira" className="btn-green">
-                Download CV <i className="fa-solid fa-download ms-2"></i>
+              {t('about.download')} <i className="fa-solid fa-download ms-2"></i>
               </a>
             </div>
           </div>
@@ -36,7 +37,7 @@ function About() {
             <i class="fa-brands fa-github"></i>
             <div>
               <p className="title">GitHub</p>
-              <p className="text">Check my code</p>
+              <p className="text">{t('about.github')}</p>
             </div>
           </div>
         </div>
