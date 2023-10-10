@@ -6,9 +6,30 @@ import englishFlag from "../../assets/images/english-flag.png";
 import "./navbar.css";
 
 function Navbar() {
+  const [isScrolling, setIsScrolling] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const { t, i18n } = useTranslation();
   const currentLanguaje = i18n.language;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        // User has started scrolling, show the navbar
+        setIsScrolling(true);
+      } else {
+        // User is at the top of the page, hide the navbar
+        setIsScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    console.log("isScrolling:", isScrolling);
+    console.log("activeSection:", activeSection);
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isScrolling, activeSection]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,8 +45,7 @@ function Navbar() {
           setActiveSection(sectionId);
         }
       });
-	  console.log(activeSection)
-    };
+    }
 
     window.addEventListener("scroll", handleScroll);
 
@@ -42,14 +62,12 @@ function Navbar() {
   };
 
   return (
-    <div className="nav">
+    <div className={`nav ${activeSection === "" || !isScrolling ? "" : "nav-visible"}`}>
       <input type="checkbox" id="nav-check" />
-      <div className="nav-header">
-		{/* <a href="#home"> */}
-        <div className="nav-img"></div>
-        <div className="nav-title">SARA</div>
-		{/* </a> */}
-      </div>
+      <a href="#home" className="nav-header">
+  <div className="nav-img"></div>
+  <div className="nav-title">SARA</div>
+</a>
       <div className="nav-btn">
         <label htmlFor="nav-check">
           <span></span>
