@@ -1,3 +1,5 @@
+import React from "react";
+
 import Navbar from "./components/NavBar/navbar";
 import Home from "./components/Home/home";
 import About from "./components/About/about";
@@ -13,13 +15,13 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-        <Home />
-        <About />
-        <GetInTouch />
-        <Skills />
-        <Projects />
+      <Home />
+      <About />
+      <GetInTouch />
+      <Skills />
+      <Projects />
       <Banner />
-        <Contact />
+      <Contact />
     </div>
   );
 }

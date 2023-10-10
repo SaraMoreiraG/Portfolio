@@ -4,7 +4,26 @@ body {
   font-family: "Product Sans", sans-serif;
   height: 100vh;
 }
-
+#home {
+	height: 100vh;
+	background-image: linear-gradient(to bottom right, #02050a, #09101a);
+}
+#about {
+	padding: 10em 5em 3em 5em;
+	background-color: #02050a;
+}
+#getInTouch {
+	padding-left: 5em;
+	padding-right: 4em;
+	padding-top: 65px;
+}
+#skills, #projects{
+	padding: 0 5em 65px 5em;
+	background-color: #09101a;
+}
+#contact{
+	padding: 5em;
+}
 h1 {
   color: #54E6A5;
   font-size: 1.5em;

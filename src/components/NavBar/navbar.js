@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
+import spanishFlag from "../../assets/images/spanish-flag.png";
+import englishFlag from "../../assets/images/english-flag.png";
+
 import "./navbar.css";
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("");
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +35,10 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <div className="nav">
@@ -74,6 +83,10 @@ function Navbar() {
           Contact
         </a>
       </div>
+      <div>
+      <button onClick={() => changeLanguage('es')}><img src={spanishFlag} /></button>
+      <button onClick={() => changeLanguage('en')}><img src={englishFlag} /></button>
+    </div>
     </div>
   );
 }

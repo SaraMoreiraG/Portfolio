@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import "./home.css";
 
 function Home() {
+  const { t } = useTranslation();
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const titles = ["Full Stack Developer", "Front End Techs", "Back End Techs"];
   const [flip, setFlip] = useState(false);
@@ -59,9 +61,9 @@ function Home() {
     <section className="row" id="home">
       <div className="left col-md-6 col-sm-12">
         <div className="header-text">
-          <h1>Hello!</h1>
+        <h1>{t('home.greeting')}</h1>
           <h1>
-            <small>I am</small> Sara
+            <small>{t('home.presentation')}</small> Sara
           </h1>
           <h2 className={`title-transition ${flip ? "title-flip" : ""}`}>
             {titles[currentTitleIndex]}
