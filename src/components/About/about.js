@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
 
-import profileImg from "../../assets/images/profilepic.jpg";
+import profileImg from "../../assets/images/web-photo.jpg";
 import Cv from "../../assets/docs/SaraMoreiraCV.pdf"
 
 import "./about.css";

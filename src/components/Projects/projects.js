@@ -8,6 +8,8 @@ import bestPhoto from "../../assets/images/bestphoto.png";
 import socialApp from "../../assets/images/socialApp.png";
 import eCommerce from "../../assets/images/e-commerce2.png";
 import spotify from "../../assets/images/spotify.png";
+import atletico from "../../assets/images/atletico-sanabria.png";
+
 
 import "./projects.css";
 
@@ -17,6 +19,14 @@ function Projects() {
 
 	// Projects data
 	const projects = [
+		{
+			imageSrc: atletico,
+			name: "Atlético Sanabria",
+			post: t('projects.atletico'),
+			link: "http://atleticosanabria.com/",
+			github: "https://github.com/SaraMoreiraG/restaurante-el89",
+			category: "React",
+		  },
 	  {
 		imageSrc: bar89,
 		name: "Restaurante el 89",

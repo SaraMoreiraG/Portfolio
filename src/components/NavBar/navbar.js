@@ -23,8 +23,6 @@ function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    console.log("isScrolling:", isScrolling);
-    console.log("activeSection:", activeSection);
     // Cleanup the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -70,7 +68,7 @@ function Navbar() {
       <input type="checkbox" id="nav-check" />
       <a href="#home" className="nav-header">
         <div className="nav-img"></div>
-        <div className="nav-title">SARA</div>
+        <div className="nav-title">SaraMorDev</div>
       </a>
 
       <div className="nav-btn">
@@ -108,12 +106,14 @@ function Navbar() {
           <img
             className={`languaje ${currentLanguaje === "es" ? "selected" : ""}`}
             src={spanishFlag}
+            alt="bandera española"
           />
         </button>
         <button onClick={() => changeLanguage("en")} className="btn-languaje">
           <img
             className={`languaje ${currentLanguaje === "en" ? "selected" : ""}`}
             src={englishFlag}
+            alt="english flag"
           />
         </button>
       </div>
