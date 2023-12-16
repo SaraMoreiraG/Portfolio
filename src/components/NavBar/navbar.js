@@ -73,7 +73,7 @@ function Navbar() {
 
       <div className="nav-btn">
         <label htmlFor="nav-check">
-          <i class="fa-solid fa-bars"></i>
+          <i className="fa-solid fa-bars"></i>
         </label>
       </div>
 

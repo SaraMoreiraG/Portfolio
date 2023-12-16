@@ -34,7 +34,7 @@ function About() {
             <img src={profileImg} alt="Sara Moreira Img" />
           </div>
           <div className="github" onClick={()=> window.open("https://github.com/SaraMoreiraG", "_blank")}>
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
             <div>
               <p className="title">GitHub</p>
               <p className="text">{t('about.github')}</p>
