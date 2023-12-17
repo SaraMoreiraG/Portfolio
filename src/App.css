@@ -41,8 +41,16 @@ h1 {
 	}
 }
 h2{
-  font-size: 38px;
-  font-weight: 700;
+  font-size: 48px;
+  font-weight: 400;
+  /* line-height: 48px; */
+  /* margin-top: 0.8em; */
+}
+h3{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #54E6A5;
   margin-top: 0.8em;
 }
 
