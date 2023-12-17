@@ -12,18 +12,24 @@ function Card(props) {
           <ul className="icon">
             {props.link ? (
               <li>
-              <a href={props.link} className="fa fa-link" target="blank" alt="link to project" rel="noopener noreferrer" aria-label="Link to project"></a>
+                <a
+                  href={props.link}
+                  className="fa fa-link"
+                  target="blank"
+                  alt="link to project"
+                > </a>
               </li>
-            ): ("")}
+            ) : (
+              ""
+            )}
             {props.github ? (
               <li>
                 <a
                   href={props.github}
                   className="fa fa-github"
                   target="blank"
-                  aria-label="link to github"
-                  rel="noopener noreferrer"
-                ></a>
+                  alt="link to github"
+                > </a>
               </li>
             ) : (
               ""
