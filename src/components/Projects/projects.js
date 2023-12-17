@@ -91,7 +91,7 @@ function Projects() {
   return (
     <section className="row" id="projects">
       <h3 className="mt-5 pt-5">{t('projects.title')}</h3>
-      <h2 className="col-6 mt-3 mb-5">{t('projects.description')}</h2>
+      <h2 className="col-7 mt-3 mb-5">{t('projects.description')}</h2>
       <div className="row justify-content-center mb-5">
         <button
           className={`btn-green2 me-2 ${

@@ -13,7 +13,7 @@ function About() {
     <section className="row" id="about">
       <div className="d-flex align-items-center col-6">
         <div>
-          <h1>{t('about.title')}</h1>
+          <h3>{t('about.title')}</h3>
           <h2>{t('about.title2')}</h2>
           <div className="d-flex mt-5">
             <div className="col-2 me-4">

@@ -9,7 +9,7 @@ function Skills() {
   return (
     <section className="row" id="skills">
       <div className="center-title mb-4">
-        <h1 className="col-12">{t('skills.title')}</h1>
+        <h3 className="col-12">{t('skills.title')}</h3>
         <h2 className="col-6 mt-1">{t('skills.description')}</h2>
       </div>
       <div className="row my-5">
