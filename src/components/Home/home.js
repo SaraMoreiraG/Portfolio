@@ -62,37 +62,41 @@ function Home() {
 
   return (
     <section className="row" id="home">
-      <div className="left col-md-6 col-sm-12">
+      <div className="left col-lg-6 col-sm-12">
         <div className="header-text">
-          <h1>{t("home.greeting")}</h1>
-          <h1>{t("home.presentation")}</h1>
-          <h1 className={`title-transition ${flip ? "title-flip" : ""}`}>
-            {titles[currentTitleIndex]}
-          </h1>
-          <p className="my-4">{t("home.description")}</p>
-          <div className="d-flex">
-            <a
-              href={i18n.language === "es" ? Cv : Resume}
-              download={
-                i18n.language === "es"
-                  ? "Cv Sara Moreira"
-                  : "Sara Moreira Resume"
-              }
-              className="btn-green"
-            >
-              {t("about.download")}{" "}
-              <i className="fa-solid fa-download ms-2"></i>
-            </a>
-            <a href="#projects" className="eye-container ms-5">
-              <div className="eye me-2">
-                <i className="fa-solid fa-eye"></i>
-              </div>
-              Ver Proyectos
-            </a>
+          <div className="col-lg-12 col-md-6 col-sm-12 m-0">
+            <h1>{t("home.greeting")}</h1>
+            <h1>{t("home.presentation")}</h1>
+            <h1 className={`title-transition ${flip ? "title-flip" : ""}`}>
+              {titles[currentTitleIndex]}
+            </h1>
+          </div>
+          <div className="col-lg-12 col-md-6 col-sm-12 m-0">
+            <p className="my-4">{t("home.description")}</p>
+            <div className="home-button">
+              <a
+                href={i18n.language === "es" ? Cv : Resume}
+                download={
+                  i18n.language === "es"
+                    ? "Cv Sara Moreira"
+                    : "Sara Moreira Resume"
+                }
+                className="btn-green"
+              >
+                {t("about.download")}{" "}
+                <i className="fa-solid fa-download ms-2"></i>
+              </a>
+              <a href="#projects" className="eye-container ms-5">
+                <div className="eye me-2">
+                  <i className="fa-solid fa-eye"></i>
+                </div>
+                Ver Proyectos
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div className="right col-md-6 col-sm-12">
+      <div className="right col-lg-6 col-sm-12">
         <div className="icons col-12">
           <div className="row mb-4">
             <i className="fa-solid fa-code"></i>

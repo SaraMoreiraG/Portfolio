@@ -25,15 +25,21 @@ body {
 	padding: 5em;
 }
 h1 {
-  /* color: #54E6A5; */
   font-size: 60px;
-  /* text-transform: uppercase; */
 	line-height: 72px;
 	font-weight: 700;
 	margin: 0;
-
 }
-
+@media (max-width: 1116px) {
+	h1{
+		font-size: 50px;
+	}
+}
+@media (max-width: 885px) {
+	h1{
+		font-size: 45px;
+	}
+}
 h2{
   font-size: 38px;
   font-weight: 700;

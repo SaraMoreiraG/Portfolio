@@ -4,14 +4,14 @@ function Banner() {
   return (
 <div className="wrapper">
   <div className="marquee py-4">
-    <p>
+    <small>
       HTML * CSS * Bootstrap * JavaScript * TypeScript * React * Angular *
       Python * Flask * NodeJs * Express * Apis * MySql *&nbsp;
-    </p>
-    <p>
+    </small>
+    <small>
       HTML * CSS * Bootstrap * JavaScript * TypeScript * React * Angular *
       Python * Flask * NodeJs * Express * Apis * MySql *&nbsp;
-    </p>
+    </small>
   </div>
 </div>
 
