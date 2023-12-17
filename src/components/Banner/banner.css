@@ -13,7 +13,7 @@
 	animation: marquee 30s linear infinite;
 }
 
-.marquee p {
+.marquee small {
 	display: inline-block;
 	font-size: 100px;
 	font-weight: bold;

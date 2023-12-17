@@ -1,7 +1,7 @@
 body {
   background-color: #02050a;
   color: #fdfcfe;
-  font-family: "Product Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
   height: 100vh;
 }
 #home {
@@ -25,20 +25,40 @@ body {
 	padding: 5em;
 }
 h1 {
-  color: #54E6A5;
-  font-size: 1.5em;
-  text-transform: uppercase;
+  font-size: 60px;
+	line-height: 72px;
+	font-weight: 700;
+	margin: 0;
 }
-
+@media (max-width: 1116px) {
+	h1{
+		font-size: 50px;
+	}
+}
+@media (max-width: 885px) {
+	h1{
+		font-size: 45px;
+	}
+}
 h2{
-  font-size: 3em;
-  font-weight: 700;
+  font-size: 48px;
+  font-weight: 400;
+  /* line-height: 48px; */
+  /* margin-top: 0.8em; */
+}
+h3{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #54E6A5;
   margin-top: 0.8em;
 }
 
 p, a{
-  font-size: 18px;
-  color: #a2a2a2;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.2px;
+  color: rgb(162, 162, 162);
   text-decoration: none;
 }
 

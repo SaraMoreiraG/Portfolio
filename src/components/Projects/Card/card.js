@@ -10,15 +10,19 @@ function Card(props) {
           <h3 className="title">{props.name}</h3>
           <span className="post">{props.post}</span>
           <ul className="icon">
-            <li>
-              <a href={props.link} className="fa fa-link" target="blank"></a>
-            </li>
+            {props.link ? (
+              <li>
+              <a href={props.link} className="fa fa-link" target="blank" alt="link to project" rel="noopener noreferrer" aria-label="Link to project"></a>
+              </li>
+            ): ("")}
             {props.github ? (
               <li>
                 <a
                   href={props.github}
                   className="fa fa-github"
                   target="blank"
+                  aria-label="link to github"
+                  rel="noopener noreferrer"
                 ></a>
               </li>
             ) : (

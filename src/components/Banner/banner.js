@@ -2,16 +2,16 @@ import "./banner.css";
 
 function Banner() {
   return (
-<div class="wrapper">
-  <div class="marquee py-4">
-    <p>
+<div className="wrapper">
+  <div className="marquee py-4">
+    <small>
       HTML * CSS * Bootstrap * JavaScript * TypeScript * React * Angular *
       Python * Flask * NodeJs * Express * Apis * MySql *&nbsp;
-    </p>
-    <p>
+    </small>
+    <small>
       HTML * CSS * Bootstrap * JavaScript * TypeScript * React * Angular *
       Python * Flask * NodeJs * Express * Apis * MySql *&nbsp;
-    </p>
+    </small>
   </div>
 </div>
 

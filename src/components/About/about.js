@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
 
-import profileImg from "../../assets/images/profilepic.jpg";
+import profileImg from "../../assets/images/web-photo.jpg";
 import Cv from "../../assets/docs/SaraMoreiraCV.pdf"
 
 import "./about.css";
@@ -34,7 +34,7 @@ function About() {
             <img src={profileImg} alt="Sara Moreira Img" />
           </div>
           <div className="github" onClick={()=> window.open("https://github.com/SaraMoreiraG", "_blank")}>
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
             <div>
               <p className="title">GitHub</p>
               <p className="text">{t('about.github')}</p>

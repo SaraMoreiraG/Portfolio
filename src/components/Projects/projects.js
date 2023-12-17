@@ -8,6 +8,9 @@ import bestPhoto from "../../assets/images/bestphoto.png";
 import socialApp from "../../assets/images/socialApp.png";
 import eCommerce from "../../assets/images/e-commerce2.png";
 import spotify from "../../assets/images/spotify.png";
+import atletico from "../../assets/images/atletico-sanabria.png";
+import aigostar from "../../assets/images/aigostar.png"
+
 
 import "./projects.css";
 
@@ -17,6 +20,22 @@ function Projects() {
 
 	// Projects data
 	const projects = [
+		{
+			imageSrc: aigostar,
+			name: "Aigostar",
+			post: t('projects.aigostar'),
+			link: "https://aigostarcooking.com/",
+			github: "https://github.com/SaraMoreiraG/Aigostar",
+			category: "React",
+		},
+		{
+			imageSrc: atletico,
+			name: "Atlético Sanabria",
+			post: t('projects.atletico'),
+			link: "http://atleticosanabria.com/",
+			github: "https://github.com/SaraMoreiraG/restaurante-el89",
+			category: "React",
+		},
 	  {
 		imageSrc: bar89,
 		name: "Restaurante el 89",
@@ -37,7 +56,6 @@ function Projects() {
 		imageSrc: eCommerce,
 		name: "E-commerce",
 		post: t('projects.ecommerce'),
-		link: "#",
 		github: "https://github.com/SaraMoreiraG/e-commerce",
 		category: "React",
 	  },
@@ -52,7 +70,6 @@ function Projects() {
 		imageSrc: spotify,
 		name: "Spotify Api",
 		post: t('projects.spotify'),
-		link: "#",
 		github: "https://github.com/SaraMoreiraG/SpotifyCountdown",
 		category: "React",
 	  },
@@ -60,7 +77,6 @@ function Projects() {
 		imageSrc: socialApp,
 		name: "Travel Tales",
 		post: t('projects.travel'),
-		link: "#",
 		github: "https://github.com/SaraMoreiraG/Travel-Tales-React-Flask-Api",
 		category: "React",
 	  },
@@ -74,8 +90,8 @@ function Projects() {
 
   return (
     <section className="row" id="projects">
-      <h1>{t('projects.title')}</h1>
-      <h2 className="col-8 mt-3 mb-5">{t('projects.description')}</h2>
+      <h3 className="mt-5 pt-5">{t('projects.title')}</h3>
+      <h2 className="col-6 mt-3 mb-5">{t('projects.description')}</h2>
       <div className="row justify-content-center mb-5">
         <button
           className={`btn-green2 me-2 ${
@@ -110,7 +126,7 @@ function Projects() {
           WordPress
         </button>
       </div>
-	  <div className="row">
+	  <div className="row m-0 p-0">
         {filteredProjects.map((project, index) => (
           <Card
             key={index}

@@ -15,12 +15,12 @@ function GetInTouch() {
         <p className="description">{t('getintouch.description')}</p>
         <div className="d-flex justify-content-between my-5">
           <div className="block me-2">
-            <i class="fa-solid fa-list-check"></i>
+            <i className="fa-solid fa-list-check"></i>
             <p className="quantity">6+</p>
             <p className="block-text">{t('getintouch.projects')}</p>
           </div>
           <div className="block me-2">
-            <i class="fa-regular fa-comments"></i>
+            <i className="fa-regular fa-comments"></i>
             <p className="quantity">5+</p>
             <p className="block-text">{t('getintouch.clients')}</p>
           </div>
