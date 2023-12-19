@@ -12,6 +12,7 @@ function GetInTouch() {
     message: "",
   });
   const [errorMessage, setErrorMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,10 +24,12 @@ function GetInTouch() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true)
     const { name, phone, email, message } = emailInfo;
     if (email && message) {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (emailRegex.test(email)) {
+        setErrorMessage('')
         try {
           const response = await fetch(
             process.env.REACT_APP_API_URL + "/email/send-email",
@@ -45,6 +48,7 @@ function GetInTouch() {
           );
           const data = await response.json();
           console.log("Server Response:", data);
+          setIsLoading(false)
           setErrorMessage(t("getintouch.error-message-ok"));
           setEmailInfo({
             name: "",
@@ -53,13 +57,16 @@ function GetInTouch() {
             message: "",
           })
         } catch (error) {
+          setIsLoading(false)
           console.error("Error:", error.message);
           setErrorMessage(t("getintouch.error-message-be"));
         }
       } else {
+        setIsLoading(false)
         setErrorMessage(t("getintouch.error-message-email"));
       }
     } else {
+      setIsLoading(false)
       setErrorMessage(t("getintouch.error-message"));
     }
   };
@@ -117,6 +124,11 @@ function GetInTouch() {
             value={emailInfo.message}
             onChange={handleChange}
           />
+          {isLoading && (
+            <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          )}
           <p>{errorMessage}</p>
           <button
             type="submit"

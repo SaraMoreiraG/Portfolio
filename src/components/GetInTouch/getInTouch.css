@@ -2,7 +2,6 @@
 	font-size: 128px;
 	line-height: 60px;
 	margin-top: 30px;
-	/* margin-bottom: 45px; */
 }
 
 #getInTouch h1 {
@@ -70,4 +69,8 @@
 }
 .form textarea{
 	padding-top: 10px;
+}
+
+.spinner-border{
+	color: #54E6A5;
 }
