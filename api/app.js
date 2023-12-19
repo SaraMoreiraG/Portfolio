@@ -35,11 +35,11 @@ app.use((req, res) => {
 // HTTPS options
 const httpsOptions = {
   key: fs.readFileSync(
-    "/etc/letsencrypt/archive/api.atleticosanabria.com/privkey1.pem",
+    "/etc/letsencrypt/archive/api.saramordev.com/privkey1.pem",
     "utf8"
   ),
   cert: fs.readFileSync(
-    "/etc/letsencrypt/archive/api.atleticosanabria.com/fullchain1.pem",
+    "/etc/letsencrypt/archive/api.saramordev.com/fullchain1.pem",
     "utf8"
   ),
 };

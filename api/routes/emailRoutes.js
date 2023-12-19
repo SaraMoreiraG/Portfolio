@@ -1,7 +1,13 @@
 const express = require('express');
-const nodemailer = require('nodemailer');
-const router = express.Router(); // Create an Express router instance
 const cors = require('cors');
+const dotenv = require("dotenv");
+const nodemailer = require('nodemailer');
+
+dotenv.config();
+const router = express.Router();
+
+router.use(cors());
+router.use(express.json());
 
 router.post('/send-email', async (req, res) => {
   const { name, phone, email, message } = req.body;
