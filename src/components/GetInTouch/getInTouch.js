@@ -11,6 +11,7 @@ function GetInTouch() {
     phone: "",
     message: "",
   });
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,28 +24,43 @@ function GetInTouch() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { name, phone, email, message } = emailInfo;
-
-    try {
-      const response = await fetch(process.env.REACT_APP_API_URL + "/email/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          phone,
-          email,
-          message,
-        }),
-      });
-
-      const data = await response.json();
-      console.log("Server Response:", data);
-
-      // Handle the response as needed (e.g., show a success message to the user)
-    } catch (error) {
-      console.error("Error:", error.message);
-      // Handle the error (e.g., show an error message to the user)
+    if (email && message) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (emailRegex.test(email)) {
+        try {
+          const response = await fetch(
+            process.env.REACT_APP_API_URL + "/email/send-email",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                name,
+                phone,
+                email,
+                message,
+              }),
+            }
+          );
+          const data = await response.json();
+          console.log("Server Response:", data);
+          setErrorMessage(t("getintouch.error-message-ok"));
+          setEmailInfo({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+          })
+        } catch (error) {
+          console.error("Error:", error.message);
+          setErrorMessage(t("getintouch.error-message-be"));
+        }
+      } else {
+        setErrorMessage(t("getintouch.error-message-email"));
+      }
+    } else {
+      setErrorMessage(t("getintouch.error-message"));
     }
   };
 
@@ -101,6 +117,7 @@ function GetInTouch() {
             value={emailInfo.message}
             onChange={handleChange}
           />
+          <p>{errorMessage}</p>
           <button
             type="submit"
             className="btn-green col-4"
