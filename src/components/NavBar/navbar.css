@@ -44,7 +44,7 @@
 	box-shadow: 0 0 4px #fff;
 }
 
-.nav>.nav-btn {
+.nav-btn {
 	display: none;
 }
 
@@ -61,7 +61,6 @@
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 12px;
-	/* letter-spacing: 2px; */
 }
 
 .nav-links a:not(.active) {
@@ -81,6 +80,7 @@
 
 .nav-links .active {
 	color: #54E6A5;
+	cursor: default;
 	text-decoration: underline;
 	text-underline-offset: 11px;
 	text-decoration-thickness: 3px;
@@ -94,7 +94,7 @@
 	bottom: -8px;
 	left: 0;
 	width: 0;
-	height: 3px;
+	height: 2px;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -114,6 +114,7 @@
 	display: flex;
 	justify-content: right;
 }
+
 .green-frame-icon,
 .languaje-buttons {
 	box-shadow: 0 0 8px #0dab76;
@@ -126,7 +127,7 @@
 	transform: all 0.5s ease-in-out;
 }
 
-.green-frame-icon{
+.green-frame-icon {
 	height: 25px;
 	width: 25px;
 }
@@ -135,12 +136,13 @@
 	width: 75px;
 }
 
-.green-frame-icon:hover{
+.green-frame-icon:hover {
 	box-shadow: 0 0 4px #fff;
 	cursor: pointer;
 	color: #54E6A5;
 }
-.green-frame-icon i{
+
+.green-frame-icon i {
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
@@ -156,10 +158,11 @@
 	transition: all 0.3s ease-in-out;
 }
 
-.languaje-container:hover .languaje{
+.languaje-container:hover .languaje {
 	height: 25px;
 }
-.languaje-container:hover .languaje-buttons{
+
+.languaje-container:hover .languaje-buttons {
 	box-shadow: 0 0 4px #fff;
 	cursor: pointer;
 	color: #54E6A5;
@@ -170,26 +173,39 @@
 }
 
 @media (max-width:965px) {
-	.nav>.nav-btn {
+	.nav {
+		padding: 0 40px 0 40px;
+	}
+
+	.nav>.nav-header>.nav-img {
+		height: 45px;
+		width: 45px;
+	}
+
+	.languaje-buttons {
+		display: none;
+	}
+
+	.nav-btn {
 		display: flex;
 		text-align: center;
 		box-shadow: 0 0 12px #0dab76;
 		color: #fdfcfe;
 	}
 
-	.nav>.nav-btn>label {
+	.nav-btn>label {
 		display: inline-block;
 		width: 50px;
 		height: 50px;
 		padding: 13px;
 	}
 
-	.nav>.nav-btn>label:hover,
+	.nav-btn>label:hover,
 	.nav #nav-check:checked~.nav-btn>label {
 		background-color: rgba(0, 0, 0, 0.3);
 	}
 
-	.nav>.nav-btn>label>span {
+	.nav-btn>label>span {
 		display: block;
 		width: 30px;
 		height: 10px;
@@ -199,18 +215,35 @@
 	.nav>.nav-links {
 		position: absolute;
 		display: block;
+		text-align: center;
+		align-items: center;
 		width: 100%;
-		background-color: #333;
+		background-color: #09101a;
 		height: 0px;
 		transition: all 0.3s ease-in;
 		overflow-y: hidden;
-		top: 50px;
+		top: 80px;
 		left: 0px;
 	}
 
 	.nav>.nav-links>a {
 		display: block;
 		width: 100%;
+		padding: 15px 10px;
+	}
+
+	.nav>.nav-links>a:first-child {
+		padding-top: 25px;
+	}
+
+	.nav-links .active {
+		text-decoration: none;
+	}
+
+	.nav-links a:not(.active)::before {
+		bottom: -3px;
+		left: 45%;
+		max-width: 90px;
 	}
 
 	.nav>#nav-check:not(:checked)~.nav-links {
@@ -218,7 +251,9 @@
 	}
 
 	.nav>#nav-check:checked~.nav-links {
-		height: calc(100vh - 50px);
+		height: 200px;
 		overflow-y: auto;
+		border-top: 2px solid #54E6A5;
+		border-bottom: 2px solid #54E6A5;
 	}
 }
