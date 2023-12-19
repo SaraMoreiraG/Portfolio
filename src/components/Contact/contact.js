@@ -6,7 +6,7 @@ function Contact() {
   const { t } = useTranslation();
 
   return (
-    <div className="row" id="contact">
+    <div className="row">
       <div className="d-flex align-items-center col-4">
         <div className="green-circle">
           <i className="fa-solid fa-location-dot"></i>

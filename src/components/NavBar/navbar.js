@@ -78,6 +78,12 @@ function Navbar() {
       </div>
 
       <div className="nav-links">
+        <a
+          href="#projects"
+          className={activeSection === "projects" ? "active" : ""}
+        >
+          {t("nav.projects")}
+        </a>
         <a href="#about" className={activeSection === "about" ? "active" : ""}>
           {t("nav.about")}
         </a>
@@ -88,20 +94,27 @@ function Navbar() {
           {t("nav.skills")}
         </a>
         <a
-          href="#projects"
-          className={activeSection === "projects" ? "active" : ""}
-        >
-          {t("nav.projects")}
-        </a>
-        <a
-          href="#contact"
-          className={activeSection === "contact" ? "active" : ""}
+          href="#getInTouch"
+          className={activeSection === "getInTouch" ? "active" : ""}
         >
           {t("nav.contact")}
         </a>
       </div>
 
+      <div className="social-media-nav col-2">
+        <a href="https://www.instagram.com/saramordev/" target="_blank" rel="noreferrer" class="green-frame-icon me-3">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sara-moreira-g/" target="_blank" rel="noreferrer" class="green-frame-icon me-3">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/SaraMoreiraG" target="_blank" rel="noreferrer" class="green-frame-icon me-3">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
       <div className="languaje-buttons">
+        <div className="languaje-container">
+
         <button onClick={() => changeLanguage("es")} className="btn-languaje">
           <img
             className={`languaje ${currentLanguaje === "es" ? "selected" : ""}`}
@@ -109,6 +122,9 @@ function Navbar() {
             alt="bandera española"
           />
         </button>
+        </div>
+        <div className="languaje-container">
+
         <button onClick={() => changeLanguage("en")} className="btn-languaje">
           <img
             className={`languaje ${currentLanguaje === "en" ? "selected" : ""}`}
@@ -116,7 +132,10 @@ function Navbar() {
             alt="english flag"
           />
         </button>
+        </div>
       </div>
+      </div>
+
     </div>
   );
 }
