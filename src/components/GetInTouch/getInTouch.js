@@ -73,26 +73,26 @@ function GetInTouch() {
 
   return (
     <div className="row" id="getInTouch">
-      <div className="pe-4 col-6">
-        <h2>
+      <div className="pe-4 col-lg-6 col-md-12 p-0 m-0">
+        <h2 className="col-lg-12 col-md-5 col-sm-12 m-0">
           {t("getintouch.code")}
           <span>{t("getintouch.innovation")}</span>
         </h2>
-        <p className="description">{t("getintouch.description")}</p>
+        <p className="description mt-4">{t("getintouch.description")}</p>
         <div className="d-flex justify-content-between my-5">
           <div className="block me-2">
             <i className="fa-solid fa-list-check"></i>
-            <p className="quantity">6+</p>
+            <p className="quantity">+ 10</p>
             <p className="block-text">{t("getintouch.projects")}</p>
           </div>
           <div className="block me-2">
             <i className="fa-regular fa-comments"></i>
-            <p className="quantity">5+</p>
+            <p className="quantity">100%</p>
             <p className="block-text">{t("getintouch.clients")}</p>
           </div>
         </div>
       </div>
-      <div className="right-form col-6">
+      <div className="right-form col-lg-6 col-md-12">
         <h1 className="form-title">{t("getintouch.form-title")}</h1>
         <p>{t("getintouch.form-p")}</p>
         <div className="form my-5">
@@ -125,8 +125,8 @@ function GetInTouch() {
             onChange={handleChange}
           />
           {isLoading && (
-            <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
+            <div className="spinner-border" role="status">
+            <span className="visually-hidden">Loading...</span>
           </div>
           )}
           <p>{errorMessage}</p>

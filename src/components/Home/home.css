@@ -1,11 +1,18 @@
 .left,
 .right {
 	display: flex;
-	padding-left: 5em;
 	align-items: center;
 }
-.left {
+.left{
+	padding: 0 20px 0 100px;
 	text-align: right;
+}
+.right{
+	padding: 50px 100px;
+}
+.icons{
+	padding: 0;
+	margin: 0;
 }
 .header-text {
 	margin: 0;
@@ -20,6 +27,7 @@
 	display: flex;
 	align-items: center;
 	cursor: pointer;
+	margin-left: 20px;
 }
 
 .eye {
@@ -51,7 +59,8 @@ small {
 	box-shadow: 0 0 12px #0dab76;
 	align-items: center;
 	justify-content: space-around;
-	padding: 20px 0 20px 0;
+	/* padding: 20px 2px0 20px 20px; */
+	/* margin: 0 40px 0 40px; */
 	/* background-image: linear-gradient(to bottom right, #09101a, #1f1f24); */
 }
 
@@ -130,19 +139,18 @@ small {
 }
 
 /******** Media *********/
-@media (max-width: 1116px) {
-	.fa-brands,
-	.fa-database {
-		font-size: 85px;
-	}
-}
 
 @media (max-width: 992px) {
 	.left{
-		text-align: left;
+		padding: 0 90px;
+	}
+	.right{
+		padding: 50px 150px;
 	}
 	.header-text{
-		display: flex;
+		/* display: flex; */
+		text-align: center;
+		justify-content: center;
 	}
 	.home-button{
 		justify-content: center;
@@ -151,46 +159,51 @@ small {
 	.fa-database {
 		font-size: 85px;
 	}
-}
-
-@media (max-width: 973px) {
 	.fa-code {
-		font-size: 3em;
-	}
-
-	.fa-brands,
-	.fa-database {
-		font-size: 6em;
+		font-size: 28px;
 	}
 }
 
-@media (max-width: 843px) {
-
-	.fa-brands,
-	.fa-database {
-		font-size: 5em;
+@media (max-width: 768px) {
+	.left{
+		padding: 0 80px;
 	}
-
-	.fa-code {
-		font-size: 2.5em;
+	.right{
+		padding: 50px 100px;
 	}
-}
-
-@media (max-width: 767px) {
-
-	.fa-brands,
-	.fa-database {
-		font-size: 5em;
-	}
-
 	.header-text{
 		display: block;
 	}
 
-	.home-button{
-		justify-content: left;
+	.eye{
+		font-size: 18px;
+		height: 30px;
+		width: 30px;
 	}
+
 	.fa-code {
-		font-size: 2.5em;
+		font-size: 24px;
+	}
+
+	.fa-brands,
+	.fa-database {
+		font-size: 80px;
+	}
+}
+
+@media (max-width: 576px) {
+	.left{
+		padding: 0 50px;
+	}
+	.right{
+		padding: 50px 55px;
+	}
+	.fa-brands,
+	.fa-database {
+		font-size: 70px;
+	}
+
+	.fa-code {
+		font-size: 22px;
 	}
 }

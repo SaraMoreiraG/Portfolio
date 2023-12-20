@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+
 import spanishFlag from "../../assets/images/spanish-flag.png";
 import englishFlag from "../../assets/images/english-flag.png";
 
@@ -71,12 +72,6 @@ function Navbar() {
         <div className="nav-title">SaraMorDev</div>
       </a>
 
-      <div className="nav-btn">
-        <label htmlFor="nav-check">
-          <i className="fa-solid fa-bars"></i>
-        </label>
-      </div>
-
       <div className="nav-links">
         <a
           href="#projects"
@@ -100,42 +95,74 @@ function Navbar() {
           {t("nav.contact")}
         </a>
       </div>
+      <div>
+        <div className="d-flex">
+          <div className="social-media-nav">
+            <a
+              href="https://www.instagram.com/saramordev/"
+              target="_blank"
+              rel="noreferrer"
+              className="green-frame-icon me-3"
+            >
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sara-moreira-g/"
+              target="_blank"
+              rel="noreferrer"
+              className="green-frame-icon me-3"
+            >
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/SaraMoreiraG"
+              target="_blank"
+              rel="noreferrer"
+              className="green-frame-icon me-3"
+            >
+              <i className="fa-brands fa-github"></i>
+            </a>
 
-      <div className="social-media-nav col-2">
-        <a href="https://www.instagram.com/saramordev/" target="_blank" rel="noreferrer" class="green-frame-icon me-3">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/sara-moreira-g/" target="_blank" rel="noreferrer" class="green-frame-icon me-3">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/SaraMoreiraG" target="_blank" rel="noreferrer" class="green-frame-icon me-3">
-          <i class="fa-brands fa-github"></i>
-        </a>
-
-      <div className="languaje-buttons">
-        <div className="languaje-container">
-
-        <button onClick={() => changeLanguage("es")} className="btn-languaje">
-          <img
-            className={`languaje ${currentLanguaje === "es" ? "selected" : ""}`}
-            src={spanishFlag}
-            alt="bandera española"
-          />
-        </button>
-        </div>
-        <div className="languaje-container">
-
-        <button onClick={() => changeLanguage("en")} className="btn-languaje">
-          <img
-            className={`languaje ${currentLanguaje === "en" ? "selected" : ""}`}
-            src={englishFlag}
-            alt="english flag"
-          />
-        </button>
+            <div className="languaje-buttons">
+              <div className="languaje-container">
+                <button
+                  onClick={() => changeLanguage("es")}
+                  className="btn-languaje"
+                >
+                  <img
+                    className={`languaje ${
+                      currentLanguaje === "es" ? "selected" : ""
+                    }`}
+                    src={spanishFlag}
+                    alt="bandera española"
+                  />
+                </button>
+              </div>
+              <div className="languaje-container">
+                <button
+                  onClick={() => changeLanguage("en")}
+                  className="btn-languaje"
+                >
+                  <img
+                    className={`languaje ${
+                      currentLanguaje === "en" ? "selected" : ""
+                    }`}
+                    src={englishFlag}
+                    alt="english flag"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="nav-btn">
+            <div className="green-frame-icon">
+              <label htmlFor="nav-check">
+                <i className="fa-solid fa-bars"></i>
+              </label>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-
     </div>
   );
 }

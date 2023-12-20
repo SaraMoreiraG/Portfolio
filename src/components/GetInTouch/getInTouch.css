@@ -1,5 +1,5 @@
 #getInTouch h2 {
-	font-size: 128px;
+	font-size: 90px;
 	line-height: 60px;
 	margin-top: 30px;
 }
@@ -38,7 +38,8 @@
 }
 
 .block-text {
-	font-size: 1.2em;
+	font-size: 16px;
+	margin-top: 12px;
 	color: #fdfcfe;
 }
 
@@ -74,3 +75,29 @@
 .spinner-border{
 	color: #54E6A5;
 }
+
+@media (max-width: 992px) {
+	#getInTouch h2 {
+		font-size: 80px;
+	}
+	.block {
+		height: 300px;
+		width: 375px;
+	}
+  }
+
+  @media (max-width: 768px) {
+	#getInTouch h2 {
+		font-size: 70px;
+	}
+	.block {
+		height: 300px;
+		width: 900px;
+	}
+  }
+
+  @media (max-width: 576px) {
+	#getInTouch h2 {
+		font-size: 40px;
+	}
+  }

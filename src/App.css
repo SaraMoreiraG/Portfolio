@@ -4,49 +4,41 @@ body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
 }
+
 #home {
-	height: 100vh;
-	background-image: linear-gradient(to bottom right, #02050a, #09101a);
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #02050a, #09101a);
 }
-#about {
-	padding: 10em 5em 3em 5em;
-	background-color: #02050a;
-}
+
+#about,
+#skills,
+#projects,
 #getInTouch {
-	padding-left: 5em;
-	padding-right: 4em;
-	padding-top: 65px;
+  padding: 85px 100px 65px 100px;
 }
-#skills, #projects{
-	padding: 0 5em 65px 5em;
-	background-color: #09101a;
+
+#contact {
+  padding: 0 100px 65px 100px;
 }
-#contact{
-	padding: 5em;
+#skills,
+#projects,
+#contact {
+  background-color: #09101a;
 }
+
 h1 {
   font-size: 60px;
-	line-height: 72px;
-	font-weight: 700;
-	margin: 0;
+  line-height: 72px;
+  font-weight: 700;
+  margin: 0;
 }
-@media (max-width: 1116px) {
-	h1{
-		font-size: 50px;
-	}
-}
-@media (max-width: 885px) {
-	h1{
-		font-size: 45px;
-	}
-}
-h2{
+
+h2 {
   font-size: 48px;
   font-weight: 600;
-  /* line-height: 48px; */
-  /* margin-top: 0.8em; */
 }
-h3{
+
+h3 {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -54,7 +46,13 @@ h3{
   margin-top: 0.8em;
 }
 
-p, a{
+h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+p,
+a {
   font-size: 16px;
   font-weight: 500;
   line-height: 27.2px;
@@ -71,18 +69,101 @@ p, a{
   cursor: pointer;
   padding: 15px 20px 15px 20px;
   font-weight: 600;
+  text-align: center;
   transition: background-color 0.3s ease-in-out;
 }
 
-.btn-green2{
-  width: 150px;
+.btn-clean {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 600;
 }
+
+.btn-green a {
+  color: #1f1f24;
+  font-weight: 600;
+}
+
 .btn-green:hover,
 .btn-green2:hover,
 .btn-selected {
   background-color: #141c27;
   color: #fdfcfe;
 }
-.btn-selected{
+
+.btn-selected {
   border: 1px solid #54E6A5;
+}
+
+.btn-green2:hover .btn-clean,
+.btn-selected .btn-clean {
+  color: #fdfcfe;
+}
+
+@media (max-width: 1116px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  #about,
+  #skills,
+  #projects,
+  #getInTouch {
+    padding: 85px 80px 65px 80px;
+  }
+
+  #contact{
+    display: block;
+    padding: 20px 80px 65px 80px;
+
+  }
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  #about,
+  #skills,
+  #projects,
+  #getInTouch {
+    padding: 85px 60px 65px 60px;
+  }
+
+  .btn-green {
+    padding: 10px 15px 10px 10px !important;
+  }
+
+  .btn-green2 {
+    width: none;
+
+  }
+}
+
+@media (max-width: 576px) {
+  #about,
+  #skills,
+  #projects,
+  #getInTouch {
+    padding: 85px 45px 65px 45px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
 }
