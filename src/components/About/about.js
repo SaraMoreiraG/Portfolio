@@ -10,16 +10,16 @@ function About() {
   const { t } = useTranslation();
 
   return (
-    <section className="row" id="about">
-      <div className="d-flex align-items-center col-6">
+    <section className="row g-5" id="about">
+      <div className="d-flex align-items-center col-md-6 col-sm-12">
         <div>
           <h3>{t('about.title')}</h3>
           <h2>{t('about.title2')}</h2>
           <div className="d-flex mt-5">
-            <div className="col-2 me-4">
-              <hr className="about-line"></hr>
+            <div className="col-md-2 col-sm-0 ">
+              <hr className="about-line me-2"></hr>
             </div>
-            <div className="col-10">
+            <div className="col-md-10 col-sm-12 mb-3">
               <p className="mb-5">{t('about.p')}</p>
               <a href={Cv} download="Cv Sara Moreira" className="btn-green">
               {t('about.download')} <i className="fa-solid fa-download ms-2"></i>
@@ -28,7 +28,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="img-button col-6">
+      <div className="img-button col-md-6 col-sm-12">
         <div className="elem-container">
           <div className="col-8">
             <img src={profileImg} alt="Sara Moreira Img" />

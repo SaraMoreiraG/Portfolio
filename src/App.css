@@ -10,25 +10,20 @@ body {
   background-image: linear-gradient(to bottom right, #02050a, #09101a);
 }
 
-#about {
-  padding: 10em 5em 3em 5em;
-  background-color: #02050a;
-}
-
-#getInTouch {
-  padding-left: 5em;
-  padding-right: 4em;
-  padding-top: 65px;
-}
-
+#about,
 #skills,
-#projects {
-  padding: 0 100px 65px 100px;
-  background-color: #09101a;
+#projects,
+#getInTouch {
+  padding: 85px 100px 65px 100px;
 }
 
 #contact {
-  padding: 5em;
+  padding: 0 100px 65px 100px;
+}
+#skills,
+#projects,
+#contact {
+  background-color: #09101a;
 }
 
 h1 {
@@ -49,6 +44,11 @@ h3 {
   line-height: 24px;
   color: #54E6A5;
   margin-top: 0.8em;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 600;
 }
 
 p,
@@ -72,7 +72,8 @@ a {
   text-align: center;
   transition: background-color 0.3s ease-in-out;
 }
-.btn-clean{
+
+.btn-clean {
   border: none;
   text-decoration: none;
   background-color: transparent;
@@ -83,10 +84,6 @@ a {
   color: #1f1f24;
   font-weight: 600;
 }
-
-/* .btn-green2 {
-  width: 150px;
-} */
 
 .btn-green:hover,
 .btn-green2:hover,
@@ -100,7 +97,7 @@ a {
 }
 
 .btn-green2:hover .btn-clean,
-.btn-selected .btn-clean{
+.btn-selected .btn-clean {
   color: #fdfcfe;
 }
 
@@ -111,6 +108,18 @@ a {
 }
 
 @media (max-width: 992px) {
+  #about,
+  #skills,
+  #projects,
+  #getInTouch {
+    padding: 85px 80px 65px 80px;
+  }
+
+  #contact{
+    display: block;
+    padding: 20px 80px 65px 80px;
+
+  }
   h1 {
     font-size: 48px;
   }
@@ -119,32 +128,42 @@ a {
     font-size: 36px;
   }
 
-  #skills,
-  #projects {
-    padding: 0 80px 65px 80px;
+  h4 {
+    font-size: 28px;
   }
 }
 
 @media (max-width: 768px) {
+  #about,
+  #skills,
+  #projects,
+  #getInTouch {
+    padding: 85px 60px 65px 60px;
+  }
+
   .btn-green {
     padding: 10px 15px 10px 10px !important;
   }
-  .btn-green2{
+
+  .btn-green2 {
     width: none;
 
-  }
-  #skills,
-  #projects {
-    padding: 0 60px 65px 60px;
   }
 }
 
 @media (max-width: 576px) {
+  #about,
   #skills,
-  #projects {
-    padding: 0 45px 65px 45px;
+  #projects,
+  #getInTouch {
+    padding: 85px 45px 65px 45px;
   }
+
   h2 {
     font-size: 28px;
+  }
+
+  h4 {
+    font-size: 24px;
   }
 }

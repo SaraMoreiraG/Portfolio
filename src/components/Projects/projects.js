@@ -89,7 +89,7 @@ function Projects() {
 
   return (
     <section className="row" id="projects">
-      <h3 className="mt-5 pt-5">{t("projects.title")}</h3>
+      <h3>{t("projects.title")}</h3>
       <h2 className="col-lg-7 col-md-12 mt-3 mb-5">
         {t("projects.description")}
       </h2>
