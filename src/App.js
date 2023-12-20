@@ -18,10 +18,10 @@ function App() {
       <Home />
       <Projects />
       <About />
-      {/* <Skills /> */}
+      <Skills />
       <Banner />
-      {/* <GetInTouch /> */}
-      {/* <Contact /> */}
+      <GetInTouch />
+      <Contact />
     </div>
   );
 }

@@ -102,25 +102,25 @@ function Navbar() {
               href="https://www.instagram.com/saramordev/"
               target="_blank"
               rel="noreferrer"
-              class="green-frame-icon me-3"
+              className="green-frame-icon me-3"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/sara-moreira-g/"
               target="_blank"
               rel="noreferrer"
-              class="green-frame-icon me-3"
+              className="green-frame-icon me-3"
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
             <a
               href="https://github.com/SaraMoreiraG"
               target="_blank"
               rel="noreferrer"
-              class="green-frame-icon me-3"
+              className="green-frame-icon me-3"
             >
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
 
             <div className="languaje-buttons">
