@@ -148,7 +148,6 @@ small {
 		padding: 50px 150px;
 	}
 	.header-text{
-		/* display: flex; */
 		text-align: center;
 		justify-content: center;
 	}
@@ -193,10 +192,16 @@ small {
 
 @media (max-width: 576px) {
 	.left{
-		padding: 0 50px;
+		padding: 0 20px;
 	}
 	.right{
 		padding: 50px 55px;
+	}
+	.header-text{
+		text-align: center;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
 	}
 	.fa-brands,
 	.fa-database {
@@ -205,5 +210,9 @@ small {
 
 	.fa-code {
 		font-size: 22px;
+	}
+
+	.title-transition {
+		font-size: 40px;
 	}
 }

@@ -66,99 +66,163 @@ function Navbar() {
         activeSection === "" || !isScrolling ? "" : "nav-visible"
       }`}
     >
-      <input type="checkbox" id="nav-check" />
-      <a href="#home" className="nav-header">
-        <div className="nav-img"></div>
-        <div className="nav-title">SaraMorDev</div>
-      </a>
+      <div className="social-media-small col-12">
+        <div className="social-media-nav">
+          <a
+            href="https://www.instagram.com/saramordev/"
+            target="_blank"
+            rel="noreferrer"
+            className="green-frame-icon me-3"
+          >
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sara-moreira-g/"
+            target="_blank"
+            rel="noreferrer"
+            className="green-frame-icon me-3"
+          >
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/SaraMoreiraG"
+            target="_blank"
+            rel="noreferrer"
+            className="green-frame-icon me-3"
+          >
+            <i className="fa-brands fa-github"></i>
+          </a>
 
-      <div className="nav-links">
-        <a
-          href="#projects"
-          className={activeSection === "projects" ? "active" : ""}
-        >
-          {t("nav.projects")}
-        </a>
-        <a href="#about" className={activeSection === "about" ? "active" : ""}>
-          {t("nav.about")}
-        </a>
-        <a
-          href="#skills"
-          className={activeSection === "skills" ? "active" : ""}
-        >
-          {t("nav.skills")}
-        </a>
-        <a
-          href="#getInTouch"
-          className={activeSection === "getInTouch" ? "active" : ""}
-        >
-          {t("nav.contact")}
-        </a>
-      </div>
-      <div>
-        <div className="d-flex">
-          <div className="social-media-nav">
-            <a
-              href="https://www.instagram.com/saramordev/"
-              target="_blank"
-              rel="noreferrer"
-              className="green-frame-icon me-3"
-            >
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/sara-moreira-g/"
-              target="_blank"
-              rel="noreferrer"
-              className="green-frame-icon me-3"
-            >
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
-            <a
-              href="https://github.com/SaraMoreiraG"
-              target="_blank"
-              rel="noreferrer"
-              className="green-frame-icon me-3"
-            >
-              <i className="fa-brands fa-github"></i>
-            </a>
-
-            <div className="languaje-buttons">
-              <div className="languaje-container">
-                <button
-                  onClick={() => changeLanguage("es")}
-                  className="btn-languaje"
-                >
-                  <img
-                    className={`languaje ${
-                      currentLanguaje === "es" ? "selected" : ""
-                    }`}
-                    src={spanishFlag}
-                    alt="bandera española"
-                  />
-                </button>
-              </div>
-              <div className="languaje-container">
-                <button
-                  onClick={() => changeLanguage("en")}
-                  className="btn-languaje"
-                >
-                  <img
-                    className={`languaje ${
-                      currentLanguaje === "en" ? "selected" : ""
-                    }`}
-                    src={englishFlag}
-                    alt="english flag"
-                  />
-                </button>
-              </div>
+          <div className="languaje-buttons">
+            <div className="languaje-container">
+              <button
+                onClick={() => changeLanguage("es")}
+                className="btn-languaje"
+              >
+                <img
+                  className={`languaje ${
+                    currentLanguaje === "es" ? "selected" : ""
+                  }`}
+                  src={spanishFlag}
+                  alt="bandera española"
+                />
+              </button>
+            </div>
+            <div className="languaje-container">
+              <button
+                onClick={() => changeLanguage("en")}
+                className="btn-languaje"
+              >
+                <img
+                  className={`languaje ${
+                    currentLanguaje === "en" ? "selected" : ""
+                  }`}
+                  src={englishFlag}
+                  alt="english flag"
+                />
+              </button>
             </div>
           </div>
-          <div className="nav-btn">
-            <div className="green-frame-icon">
-              <label htmlFor="nav-check">
-                <i className="fa-solid fa-bars"></i>
-              </label>
+        </div>
+
+      </div>
+      <input type="checkbox" id="nav-check" />
+      <div className="main-nav col-12">
+        <a href="#home" className="nav-header">
+          <div className="nav-img"></div>
+          <div className="nav-title">SaraMorDev</div>
+        </a>
+        <div className="nav-links">
+          <a
+            href="#projects"
+            className={activeSection === "projects" ? "active" : ""}
+          >
+            {t("nav.projects")}
+          </a>
+          <a
+            href="#about"
+            className={activeSection === "about" ? "active" : ""}
+          >
+            {t("nav.about")}
+          </a>
+          <a
+            href="#skills"
+            className={activeSection === "skills" ? "active" : ""}
+          >
+            {t("nav.skills")}
+          </a>
+          <a
+            href="#getInTouch"
+            className={activeSection === "getInTouch" ? "active" : ""}
+          >
+            {t("nav.contact")}
+          </a>
+        </div>
+        <div>
+          <div className="d-flex">
+            <div className="social-media-nav social-media-big">
+              <a
+                href="https://www.instagram.com/saramordev/"
+                target="_blank"
+                rel="noreferrer"
+                className="green-frame-icon me-3"
+              >
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sara-moreira-g/"
+                target="_blank"
+                rel="noreferrer"
+                className="green-frame-icon me-3"
+              >
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/SaraMoreiraG"
+                target="_blank"
+                rel="noreferrer"
+                className="green-frame-icon me-3"
+              >
+                <i className="fa-brands fa-github"></i>
+              </a>
+
+              <div className="languaje-buttons">
+                <div className="languaje-container">
+                  <button
+                    onClick={() => changeLanguage("es")}
+                    className="btn-languaje"
+                  >
+                    <img
+                      className={`languaje ${
+                        currentLanguaje === "es" ? "selected" : ""
+                      }`}
+                      src={spanishFlag}
+                      alt="bandera española"
+                    />
+                  </button>
+                </div>
+                <div className="languaje-container">
+                  <button
+                    onClick={() => changeLanguage("en")}
+                    className="btn-languaje"
+                  >
+                    <img
+                      className={`languaje ${
+                        currentLanguaje === "en" ? "selected" : ""
+                      }`}
+                      src={englishFlag}
+                      alt="english flag"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="nav-btn">
+              <div className="green-frame-icon">
+                <label htmlFor="nav-check">
+                  <i className="fa-solid fa-bars"></i>
+                </label>
+              </div>
             </div>
           </div>
         </div>
