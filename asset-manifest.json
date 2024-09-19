@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.ee55e147.css",
+    "main.js": "/portfolio/static/js/main.8c8d1b66.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/atletico-sanabria.png": "/portfolio/static/media/atletico-sanabria.6e2476787effed6079a2.png",
+    "static/media/bar89.png": "/portfolio/static/media/bar89.5abf237a360799ed6048.png",
+    "static/media/casarural.png": "/portfolio/static/media/casarural.288fea231af68109040e.png",
+    "static/media/socialApp.png": "/portfolio/static/media/socialApp.e73a552a9dfa4fd4af6a.png",
+    "static/media/bestphoto.png": "/portfolio/static/media/bestphoto.15ee374c7bdd6a250404.png",
+    "static/media/e-commerce2.png": "/portfolio/static/media/e-commerce2.f7069467ebd843b46b2f.png",
+    "static/media/spotify.png": "/portfolio/static/media/spotify.93f613110b2807b8d38b.png",
+    "static/media/aigostar.png": "/portfolio/static/media/aigostar.7d4bb7d142bfc706453c.png",
+    "static/media/web-photo.jpg": "/portfolio/static/media/web-photo.04f8f2aa16e0ae7ad928.jpg",
+    "static/media/SaraMoreiraCV.pdf": "/portfolio/static/media/SaraMoreiraCV.89b9c623fc5ed9489039.pdf",
+    "static/media/SaraMoreiraResume.pdf": "/portfolio/static/media/SaraMoreiraResume.cbd81f6d9ab64c77e9f0.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.ee55e147.css.map": "/portfolio/static/css/main.ee55e147.css.map",
+    "main.8c8d1b66.js.map": "/portfolio/static/js/main.8c8d1b66.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee55e147.css",
+    "static/js/main.8c8d1b66.js"
+  ]
+}
